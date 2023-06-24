@@ -1,0 +1,67 @@
+* Betacode Mode
+Provides
+- an input method, =betacode-im= for (ISO 639-3 code =grc=) polytonic
+  Greek input using the betacode encoding scheme
+- a (non-global) minor mode =betacode-mode= which can toggle the
+  betacode input method on and off and which provides various online
+  betacode helps
+
+* Installation
+Add =betacode-im.el= and =betacode-mode.el= to your load path in =init.el=, then call =load-library= on each. This is probably rediculous.
+
+* Usage
+To enable the minor mode, =M-x betacode-mode=. This will set the
+betacode input method (which can be disabled with =C-b C-d= and
+re-enabled with =C-b C-e=). Online help is available with =C-b C-h=.
+
+* Betacode Reference
+** Alphabet
+#+BEGIN_SRC
+betacode: a b g d e z h q i k l m n c o p r s s t u f x y w *A *B *G ... *W
+greek:    α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ ς τ υ φ χ ψ ω  Α  Β  Γ ...  Ω  
+#+END_SRC
+
+** Syntax
+#+BEGIN_SRC
+[capital]?letter[breathing]?[   accent      ]?[subscript]?
+     *      a      ) (         \ / = + <3 -      |  
+#+END_SRC
+
+Note that the ordering is rather rigid:
+
+1. capitalization?
+2. letter
+3. breath?
+4. accent?
+5. subscript? 
+
+Example:
+
+#+BEGIN_SRC
+betacode: *Mh=nin a)/eide qea\ *Phlhi+/dew *A)xhilh=os
+greek:     Μῆνιν ἄειδε θεὰ Πηληΐδεω Ἀχιλῆος
+#+END_SRC
+
+** Diacritic Marks
+| BETACODE   | DESCRIPTION                                           |
+|------------+-------------------------------------------------------|
+|            | _BREATHING_                                           |
+| =)=        | psili - smooth breathing                              |
+| =(=        | dasia - rough breathing                               |
+|            |                                                       |
+|            | _ACCENT_                                              |
+| =\=        | varia - grave accent                                  |
+| =/=        | oxia - accute accent, tonos                           |
+| ===        | perispomeni - circumflex accent                       |
+| =+=        | dialytika diaresis; must precede an accent            |
+| =<3=       | vrachy - short stress (breve)                         |
+| =-=        | macron                                                |
+|            |                                                       |
+|            | _IOTA SUBSCRIPT / ADSCRIPT_                           |
+| =¦= (pipe) | ypogegrammeni  iota subscript                         |
+| =¦= (pipe) | prosgegrammeni iota subscript (adscript for capitals) |
+
+* Unicode References
+- https://www.unicode.org/charts/PDF/U1F00.pdf
+- https://en.wikipedia.org/wiki/Greek_Extended
+
