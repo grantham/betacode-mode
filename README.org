@@ -1,4 +1,4 @@
-* Betacode Mode
+* Betacode Emacs Minor Mode
 Provides
 - an input method, =betacode-im= for (ISO 639-3 code =grc=) polytonic
   Greek input using the betacode encoding scheme
@@ -52,7 +52,7 @@ greek:     Μῆνιν ἄειδε θεὰ Πηληΐδεω Ἀχιλῆος
 |            | _ACCENT_                                              |
 | =\=        | varia - grave accent                                  |
 | =/=        | oxia - accute accent, tonos                           |
-| ===        | perispomeni - circumflex accent                       |
+| =          | perispomeni - circumflex accent                       |
 | =+=        | dialytika diaresis; must precede an accent            |
 | =<3=       | vrachy - short stress (breve)                         |
 | =-=        | macron                                                |
