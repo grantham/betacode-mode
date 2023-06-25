@@ -1,4 +1,4 @@
-* Betacode Emacs Minor Mode
+* betacode-mode: Emacs Minor Mode for Polytonic Greek Input
 Provides
 - an input method, =betacode-im= for (ISO 639-3 code =grc=) polytonic
   Greek input using the betacode encoding scheme
