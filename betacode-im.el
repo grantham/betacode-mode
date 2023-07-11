@@ -46,7 +46,7 @@ COMBINING MARKS
 
 E.g.
           Μῆνιν ἄειδε θεὰ Πηληΐδεω Ἀχιλῆος
-       mh=nin a)/eide qea\\ *Phlhi+/dew *A)xhilh=os
+       *mh=nin a)/eide qea\\ *Phlhi+/dew *A)xhilh=os
 
 BETACODE MARK
          _BREATHING_
@@ -57,7 +57,7 @@ BETACODE MARK
   \\     varia - grave accent
   /      oxia - accute accent, tonos
   =      perispomeni - circumflex accent
-  +      dialytika diaresis; must precede an accent
+  +      dialytika diaresis
   <3     vrachy - short stress (breve)
   -      macron
 
